@@ -10,5 +10,5 @@ module.exports = {
       backgroundImage: {},
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
