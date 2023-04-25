@@ -36,11 +36,7 @@ export default function About({}: Props) {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
           vivamus arcu felis bibendum ut tristique et. Metus dictum at tempor
-          commodo ullamcorper a lacus vestibulum sed. Eleifend quam adipiscing
-          vitae proin sagittis nisl rhoncus. Pretium quam vulputate dignissim
-          suspendisse in est. Nibh sed pulvinar proin gravida hendrerit lectus
-          a. Hac habitasse platea dictumst quisque sagittis. Et magnis dis
-          parturient montes nascetur.
+          commodo ullamcorper a lacus vestibulum sed.
         </p>
       </div>
     </motion.div>

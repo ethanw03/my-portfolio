@@ -19,7 +19,7 @@ export default function Hero({}: Props) {
         src="https://i.ibb.co/BT4Z6CF/Ethan.png"
         alt="profile"
       />
-      <div className="z-20">
+      <div className="z-20 text">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Full-Stack Engineer
         </h2>

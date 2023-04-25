@@ -47,8 +47,6 @@ function ExperienceCard({}: Props) {
         <li>Responsibility Responsibility Responsibility Responsibility</li>
         <li>Responsibility Responsibility Responsibility</li>
         <li>Responsibility Responsibility Responsibility</li>
-        <li>Responsibility Responsibility Responsibility</li>
-        <li>Responsibility Responsibility Responsibility</li>
       </ul>
     </article>
   );
