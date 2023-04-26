@@ -1,17 +1,18 @@
 export default {
-  name: 'category',
-  title: 'Category',
-  type: 'document',
+  name: "social",
+  title: "Social",
+  type: "document",
   fields: [
     {
-      name: 'title',
-      title: 'Title',
-      type: 'string',
+      name: "title",
+      title: "Title",
+      description: "Platform for social media",
+      type: "string",
     },
     {
-      name: 'description',
-      title: 'Description',
-      type: 'text',
+      name: "url",
+      title: "Url",
+      type: "url",
     },
   ],
-}
+};
