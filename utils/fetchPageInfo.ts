@@ -1,14 +1,16 @@
+// utils/fetchPageInfo.js
+import { groq } from "next-sanity";
+import { sanityClient } from "../sanity";
 import { PageInfo } from "../typings";
 
+const query = groq`*[_type == "pageInfo"][0]`;
+
 export const fetchPageInfo = async () => {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getPageInfo`
-  );
-
-  const data = await res.json();
-  const pageInfo: PageInfo = data.pageInfo;
-
-  // console.log('fetching', pageInfo);
-
-  return pageInfo;
+  try {
+    const pageInfo: PageInfo = await sanityClient.fetch(query);
+    return pageInfo;
+  } catch (error) {
+    console.error("Error fetching page info:", error);
+    throw error;
+  }
 };
