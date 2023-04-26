@@ -1,9 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { PageInfo } from "../../typings";
 
-type Props = {};
+type Props = {
+  pageInfo: PageInfo;
+};
 
-export default function About({}: Props) {
+export default function About({ pageInfo }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -32,12 +35,7 @@ export default function About({}: Props) {
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
         </h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
-          vivamus arcu felis bibendum ut tristique et. Metus dictum at tempor
-          commodo ullamcorper a lacus vestibulum sed.
-        </p>
+        <p className="text-base">{pageInfo?.backgroundInformation}</p>
       </div>
     </motion.div>
   );
