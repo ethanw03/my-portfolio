@@ -26,34 +26,33 @@ function Contact({ pageInfo }: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl ">
         Contact
       </h3>
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
-          I have just what your need.{" "}
-          <span className="decoration-[#F7AB0A]/50 underline ">
+      <div className="flex flex-col space-y-10 pt-10">
+        <h4 className="text-4xl font-semibold text-center xl:text-4xl">
+          <span className="decoration-[#36454F]/50 underline ">
             Let's talk.
           </span>
         </h4>
 
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
+            <PhoneIcon className="text-[#36454F] h-7 w-7 animate-pulse " />
             <p className="text-2xl">{pageInfo.phoneNumber}</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
+            <EnvelopeIcon className="text-[#36454F] h-7 w-7 animate-pulse " />
             <p className="text-2xl">{pageInfo.email}</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
+            <MapPinIcon className="text-[#36454F] h-7 w-7 animate-pulse " />
             <p className="text-2xl">{pageInfo.address}</p>
           </div>
         </div>
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-3 w-fit mx-auto"
         >
-          <div className="flex space-x-2">
+          <div className="flex flex-col space-y-3 w-30  xl:flex-row xl:space-y-0 xl:space-x-3 ">
             <input
               {...register("name")}
               placeholder="Name"
@@ -79,7 +78,7 @@ function Contact({ pageInfo }: Props) {
             placeholder="Message"
             className="contactInput"
           />
-          <button className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg">
+          <button className="bg-[#36454F] py-5 px-10 rounded-md text-black font-bold text-lg">
             Submit
           </button>
         </form>
