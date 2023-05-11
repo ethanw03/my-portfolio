@@ -24,46 +24,50 @@ function Contact({ pageInfo }: Props) {
 
   return (
     <div className='relative flex flex-col items-center h-screen px-10 mx-auto text-center md:text-left md:flex-row max-w-7xl justify-evenly'>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl '>
+      <h3 className='absolute top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl '>
         Contact
       </h3>
-      <div className='flex flex-col pt-10 space-y-10 l:space-y-10 xl:'>
-        <h4 className='text-4xl font-semibold text-center xl:text-4xl'>
+      <div className='flex flex-col space-y-4 md:space-y-10'>
+        <h4 className='text-xl font-semibold text-center md:text-2xl lg:text-4xl'>
           <span className='decoration-[#36454F]/50 underline '>
             Let's talk.
           </span>
         </h4>
 
-        <div className='space-y-5 l:space-y-10 xl:space-y-10'>
+        <div className='space-y-1 md:space-y-5 l:space-y-10 xl:space-y-10'>
           <div className='flex items-center justify-center space-x-5'>
             <PhoneIcon className='text-[#36454F] h-7 w-7 animate-pulse ' />
-            <p className='text-2xl'>{pageInfo.phoneNumber}</p>
+            <p className='text-lg md:text-2xl lg:text-2xl'>
+              {pageInfo.phoneNumber}
+            </p>
           </div>
           <div className='flex items-center justify-center space-x-5'>
             <EnvelopeIcon className='text-[#36454F] h-7 w-7 animate-pulse ' />
-            <p className='text-2xl'>{pageInfo.email}</p>
+            <p className='text-lg md:text-2xl lg:text-2xl'>{pageInfo.email}</p>
           </div>
           <div className='flex items-center justify-center space-x-5'>
             <MapPinIcon className='text-[#36454F] h-7 w-7 animate-pulse ' />
-            <p className='text-2xl'>{pageInfo.address}</p>
+            <p className='text-lg md:text-2xl lg:text-2xl'>
+              {pageInfo.address}
+            </p>
           </div>
         </div>
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className='flex flex-col mx-auto space-y-3 w-fit'
+          className='flex flex-col mx-auto space-y-2 w-80 md:w-fit'
         >
-          <div className='flex flex-col space-y-3 w-30 xl:flex-row xl:space-y-0 xl:space-x-3 '>
+          <div className='space-y-2 md:flex md:space-x-2 md:space-y-0'>
             <input
               {...register('name')}
               placeholder='Name'
-              className='contactInput'
+              className='contactInput '
               type='text'
             />
             <input
               {...register('email')}
               placeholder='Email'
-              className='contactInput'
+              className='contactInput '
               type='email'
             />
           </div>
@@ -79,7 +83,7 @@ function Contact({ pageInfo }: Props) {
             placeholder='Message'
             className='contactInput'
           />
-          <button className='bg-[#36454F] py-5 px-10 rounded-lg text-black font-bold text-lg'>
+          <button className='bg-[#36454F] py-3 md:py-5 px-10 rounded-lg text-black font-bold text-lg'>
             Submit
           </button>
         </form>
