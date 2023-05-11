@@ -83,7 +83,7 @@ function Contact({ pageInfo }: Props) {
             placeholder='Message'
             className='contactInput'
           />
-          <button className='bg-[#36454F] py-3 md:py-5 px-10 rounded-lg text-black font-bold text-lg'>
+          <button className='bg-[#36454F] py-3 md:py-5 px-10 rounded-lg  font-bold text-lg'>
             Submit
           </button>
         </form>

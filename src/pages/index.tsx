@@ -29,6 +29,18 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#36454F]/80'>
       <Head>
         <title>Ethan's Portfolio</title>
+        <meta
+          name='description'
+          content='A Full-Stack Portfolio'
+        />
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1'
+        />
+        <link
+          rel='icon'
+          href='/me.ico'
+        />
       </Head>
 
       <Header socials={socials} />
@@ -116,6 +128,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       skills,
       socials,
     },
-    revalidate: 10,
+    revalidate: 100,
   };
 };
