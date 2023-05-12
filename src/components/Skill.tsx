@@ -21,7 +21,7 @@ function Skill({ skill, directionLeft }: Props) {
       <img
         src={imageUrl}
         alt=''
-        className='object-fill w-20 h-20 md:h-28 md:w-28 xl:w-32 xl:h-32 filter group-hover:greyscale'
+        className='relative object-fill w-20 h-20 top-10 md:h-28 md:w-28 xl:w-30 xl:h-30'
       />
     </div>
   );
