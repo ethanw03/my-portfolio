@@ -50,7 +50,7 @@ function ExperienceCard({ experience }: Props) {
           : new Date(experience?.dateEnded).toDateString()}
       </p>
 
-      <ul className='p-10 pr-10 ml-10 space-y-4 overflow-y-scroll text-sm list-disc max-h-48 md:text-lg scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#36454F]/80'>
+      <ul className='px-0 pl-5 pr-5 ml-0 space-y-2 text-sm text-justify text-black list-disc md:px-10 md:text-lg '>
         {experience.points.map((point, i) => (
           <li key={i}>{point}</li>
         ))}

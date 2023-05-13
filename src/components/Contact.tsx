@@ -27,14 +27,14 @@ function Contact({ pageInfo }: Props) {
       <h3 className='absolute top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl '>
         Contact
       </h3>
-      <div className='flex flex-col space-y-4 md:space-y-10'>
-        <h4 className='text-xl font-semibold text-center md:text-2xl lg:text-4xl'>
+      <div className='flex flex-col space-y-4 md:space-y-5 lg:space-y-6 xl:space-y-6 2xl:space-y-10'>
+        <h4 className='text-xl font-semibold text-center md:text-2xl lg:text-3xl 2xl:text-4xl'>
           <span className='decoration-[#36454F]/50 underline '>
             Let's talk.
           </span>
         </h4>
 
-        <div className='space-y-1 md:space-y-5 l:space-y-10 xl:space-y-10'>
+        <div className='space-y-1 md:space-y-3 lg:space-y-3 xl:space-y-3 2xl:space-y-5'>
           <div className='flex items-center justify-center space-x-5'>
             <PhoneIcon className='text-[#36454F] h-7 w-7 animate-pulse ' />
             <p className='text-lg md:text-2xl lg:text-2xl'>
